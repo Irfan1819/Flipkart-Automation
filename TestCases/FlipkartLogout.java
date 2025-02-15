@@ -32,7 +32,7 @@ public void login() {
     
     // Enter phone number
     WebElement phnNumber = driver.findElement(By.className("r4vIwl"));
-    phnNumber.sendKeys("7893079790", Keys.ENTER);
+    phnNumber.sendKeys("1234567890", Keys.ENTER);
     
     // Fetch OTP using Twilio
     String otp = OtpSmsHandler.fetchOtpFromSms();
