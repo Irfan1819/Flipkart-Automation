@@ -30,7 +30,7 @@ public void testCase16() throws InterruptedException {
 	
 	//Enter Phone number
 	WebElement phnNumber=driver.findElement(By.className("r4vIwl"));
-	phnNumber.sendKeys("7893079790");
+	phnNumber.sendKeys("1234567890");
 	
 	//click on request otp
 	WebElement requestOtpButton=driver.findElement(By.className("QqFHMw"));
@@ -55,14 +55,14 @@ public void testCase16() throws InterruptedException {
 	WebElement firstName=driver.findElement(By.name("firstName"));
 	firstName.clear();
 	Thread.sleep(2000);
-	firstName.sendKeys("ME");
+	firstName.sendKeys("Alice");
 	
 	
 	
 	WebElement lastName=driver.findElement(By.name("lastName"));
 	lastName.clear();
 	Thread.sleep(2000);
-	lastName.sendKeys("Irfan Basha");
+	lastName.sendKeys("John Doe");
 	
 	//click on save 
 	WebElement saveButton=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'SAVE')]")));
