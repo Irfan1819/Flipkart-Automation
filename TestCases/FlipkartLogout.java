@@ -38,7 +38,7 @@ public void login() {
     String otp = OtpSmsHandler.fetchOtpFromSms();
     Assert.assertNotNull(otp, "OTP not received!");
     
-    // Enter the OTP
+    // Enter the OTP 'I Entered the OTP Manual for Practicing Purpose'
     WebElement otpEnter = driver.findElement(By.id("OtpInput"));
     otpEnter.sendKeys(otp);
     
